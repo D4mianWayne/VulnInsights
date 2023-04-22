@@ -7,7 +7,7 @@
 
 ### `Newtonsoft.Json` Package
 
-Sure, here's an example of vulnerable .NET code that uses the Newtonsoft.Json package and is vulnerable to JSON deserialization attacks:
+An example of vulnerable .NET code that uses the Newtonsoft.Json package and is vulnerable to JSON deserialization attacks:
 
 ```jsx
 using System;
@@ -38,11 +38,6 @@ This code deserializes JSON data into a `Person` object using the `JsonConvert.D
 
 To identify such code patterns, look for the use of the `JsonConvert.DeserializeObject` method (or other similar methods) with user-controlled input data, especially if the `$type` field is being used to specify the object type to deserialize. Additionally, check if any of the types being deserialized are sensitive or could potentially execute malicious code. It's important to always validate user input data before passing it to a deserialization method to prevent JSON deserialization attacks.
 
-[data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e)
-
-Can you write one more code where the type is defined but not securely?
-
-Sure, here's an example of a .NET code that uses the `Newtonsoft.Json` package and defines the object type, but is still vulnerable to JSON deserialization attacks due to a lack of input validation:
 
 ```jsx
 using System;
@@ -74,11 +69,7 @@ In this code, the type of object to deserialize is defined using a string that s
 
 To prevent JSON deserialization attacks, it's important to validate user input data before passing it to any deserialization method, and to avoid using user input to define the type of object to deserialize. Instead, use a fixed set of known types or create a custom `JsonConverter` to handle deserialization of specific types.
 
-[data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e)
-
-Show a secure version of thios
-
-Sure, here's an example of a more secure version of the .NET code using the Newtonsoft.Json package, with input validation and a fixed set of known types:
+An example of a more secure version of the .NET code using the Newtonsoft.Json package, with input validation and a fixed set of known types:
 
 ```jsx
 using System;
