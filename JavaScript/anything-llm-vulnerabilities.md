@@ -9,6 +9,8 @@ Source link for the reported vulnerabilities are as follows:
 * https://huntr.com/bounties/70a2fb18-f030-4abb-9ddc-13f94107ac9d/ - SQL Injection Vulnerability due to Insecure Processing of Authorization Header
 * https://huntr.com/bounties/70a2fb18-f030-4abb-9ddc-13f94107ac9d/ - SQL Injection Vulnerability due to Improper sanitization of `slug` parameter
 
+[Link to "How to Identify Similar vulnerabilities"](#how-to-identify-similar-vulnerabilities)
+
 ### Insecure Processing of Authorization Header Token
 
 
@@ -263,3 +265,15 @@ The fix which is implemented by the maintainer is a good patch as it made use of
     }
   },
 ```
+
+
+---
+
+### How to Identify Similar vulnerabilities {#how-to-identify-similar-vulnerabilities}
+
+Considering how the author has identified these vulnerabilities, it can be brought down to two things:
+* Identifying the user-supplied inputs and how they are processed
+* Understanding the communication between the server and database
+
+It is not something exclusive but in order to identify such vulnerabilities, it can be approached in a manner where you can identify the possible dynamic values in the application or user inputs and how they're being processed. Considering the size of the application, it would be a problem to look into the sink of the user inputs, making use of tools like CodeQL will provide a big help. 
+On the same note, one important thing here is that it should be a must to look into the data processing part of any application that could potentially be modified to perform any unexpected operation.
