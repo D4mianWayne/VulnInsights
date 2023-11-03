@@ -15,7 +15,7 @@
 
 - **.NET**
   - **Insecure Deserialization using `JsonConvert.DeserializeObject`**
-    - [Vulnerability Analysis](.NET/Deserialization)
+    - [Vulnerability Analysis](.NET/Deserialisation/JsonConvert-Deserialisation.md)
     - **CWE Reference**: [CWE-23](https://cwe.mitre.org/data/definitions/23.html)
 
 - **JavaScript**
