@@ -20,10 +20,10 @@
 
 - **JavaScript**
   - **SQL Injection Vulnerability due to Insecure Processing of Authorization Header**
-    - [Vulnerability Details](JavaScript/anything-llm-vulnerabilities.md)
+    - [Vulnerability Analysis](JavaScript/anything-llm-vulnerabilities.md)
     - **CWE Reference**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
 
 - **Python**
   - **Improper Input Validation Leads to Arbitrary File Deletion**
-    - [Vulnerability Report](Python/anything-llm.md)
+    - [Vulnerability Analysis](Python/anything-llm.md)
     - **CWE Reference**: [CWE-22](https://cwe.mitre.org/data/definitions/22.html)
