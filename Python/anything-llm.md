@@ -103,8 +103,6 @@ In this case, I will create a file name `resolv.conf` in `/tmp` folder and will 
 ζ cp /etc/resolv.conf . 
 ζ ls -la resolv.conf 
 -rw-r--r-- 1 root root 53 Nov  3 00:30 resolv.conf
-ζ ls -la resolv.conf
-ls: cannot access 'resolv.conf': No such file or directory
 ```
 
 ```sh
@@ -124,6 +122,13 @@ Processing ../../../../../../../tmp/resolv.conf
 .conf not a supported file type for conversion. It will not be processed.
 ../../../../../../../tmp/resolv.conf deleted from filesystem
 127.0.0.1 - - [03/Nov/2023 00:30:48] "POST /process HTTP/1.1" 200 -
+```
+
+The file is successfully deleted from the system.
+
+```r
+ζ ls -la resolv.conf
+ls: cannot access 'resolv.conf': No such file or directory
 ```
 
 ### Fix
