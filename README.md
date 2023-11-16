@@ -33,6 +33,12 @@ Welcome to the Vulnerability Reference Guide repository! This guide provides con
   - [Analysis](docs/CWE-23/python/anything-llm-arbitrary-file-deletion.md)
   - Python
 
+### CWE-98
+
+- **Restricted LFI**
+  - [Analysis](docs/CWE-98/php/suite-crm-unsanitized-inclusion.md)
+  - PHP
+
 ## Contributing
 
 We welcome contributions and insights. Check [Contributing Guidelines](contributing.md) for details.
