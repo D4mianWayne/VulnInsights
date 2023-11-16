@@ -28,6 +28,13 @@ Welcome to the Vulnerability Reference Guide repository! This guide provides con
   - [Analysis](docs/CWE-98/php/suite-crm-unsanitized-inclusion.md)
   - PHP
 
+### CWE-338
+
+- **Use of Weak PRNG**
+  - [Analysis](docs/CWE-338/java/alovoa-insecure-random.md)
+  - Java
+
+
 ## Contributing
 
 We welcome contributions and insights. Check [Contributing Guidelines](contributing.md) for details.
