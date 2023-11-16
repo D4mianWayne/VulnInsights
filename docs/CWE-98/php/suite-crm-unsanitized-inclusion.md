@@ -1,6 +1,3 @@
-
-
-
 # Overview
 
 This vulnerability was reported by [navsec](https://huntr.com/users/navsec)
