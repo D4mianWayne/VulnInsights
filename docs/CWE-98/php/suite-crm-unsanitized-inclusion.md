@@ -29,6 +29,32 @@ The vulnerability arises due to an attacker's ability to control the value of `t
 
 > This could be leveraged in a scenario where an attacker possess ability to write files to the target system and using the described vulnerability to access the file, since the use `require_once` will include the PHP file in application context resulting in RCE.
 
+### Patch
+
+A [fix](https://github.com/salesagility/SuiteCRM/blob/54bc56c3bd9f1db75408db1c1d7d652c3f5f71e9/modules/Home/SubpanelCreates.php) was made to the `SuiteCRM`, a whitelist/blacklist mechanism by checking the value, a regex was implemented to check no directory traversal is possible.
+
+
+```php
+if (empty($target_module) || !isAllowedModuleName($target_module)) {
+    throw new InvalidArgumentException('Invalid target_module');
+}
+```
+
+```php
+function isAllowedModuleName(string $value): bool {
+    if (empty($value)) {
+        return false;
+    }
+
+    $result = preg_match("/^[\w\-\_\.]+$/", $value);
+
+    if (!empty($result)) {
+        return true;
+    }
+
+    return false;
+}
+```
 
 ### How to Identify Similar vulnerabilities
 
