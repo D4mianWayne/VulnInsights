@@ -1,29 +1,46 @@
 # Vulnerability Reference Guide
 
-## Common Weakness Enumeration (CWEs)
+Welcome to the Vulnerability Reference Guide repository! This guide provides concise analyses of vulnerabilities categorized based on Common Weakness Enumerations (CWEs).
+
+## CWEs
 
 - **CWE-23: Insecure Deserialization**
-  - [CWE-23 Details](https://cwe.mitre.org/data/definitions/23.html)
+  - [Details](https://cwe.mitre.org/data/definitions/23.html)
 
 - **CWE-89: SQL Injection**
-  - [CWE-89 Details](https://cwe.mitre.org/data/definitions/89.html)
+  - [Details](https://cwe.mitre.org/data/definitions/89.html)
 
 - **CWE-22: Improper Input Validation**
-  - [CWE-22 Details](https://cwe.mitre.org/data/definitions/22.html)
+  - [Details](https://cwe.mitre.org/data/definitions/22.html)
 
-## Vulnerabilities by Language
+## Vulnerabilities
 
-- **.NET**
-  - **Insecure Deserialization using `JsonConvert.DeserializeObject`**
-    - [Vulnerability Analysis](.NET/Deserialisation/JsonConvert-Deserialisation.md)
-    - **CWE Reference**: [CWE-23](https://cwe.mitre.org/data/definitions/23.html)
+### CWE-22
 
-- **JavaScript**
-  - **SQL Injection Vulnerability due to Insecure Processing of Authorization Header**
-    - [Vulnerability Analysis](JavaScript/anything-llm-vulnerabilities.md)
-    - **CWE Reference**: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
+- **Insecure Deserialization using `JsonConvert.DeserializeObject`**
+  - [Analysis](docs/CWE-22/dotnet/JsonConvert-Deserialisation.md)
+  - DotNet
 
-- **Python**
-  - **Improper Input Validation Leads to Arbitrary File Deletion**
-    - [Vulnerability Analysis](Python/anything-llm.md)
-    - **CWE Reference**: [CWE-22](https://cwe.mitre.org/data/definitions/22.html)
+### CWE-89
+
+- **SQL Injection Vulnerability due to Insecure Processing of Authorization Header**
+  - [Analysis](docs/CWE-89/javascript/anything-llm-sql-injection-vulnerabilities.md)
+  - JavaScript
+
+### CWE-23
+
+- **Improper Input Validation Leads to Arbitrary File Deletion**
+  - [Analysis](docs/CWE-23/python/anything-llm-arbitrary-file-deletion.md)
+  - Python
+
+## Contributing
+
+We welcome contributions and insights. Check [Contributing Guidelines](contributing.md) for details.
+
+## License
+
+This project is under the [MIT License](LICENSE).
+
+## Questions?
+
+Feel free to [open an issue](https://github.com/your-username/VulnInsights/issues). Thanks for your input!
