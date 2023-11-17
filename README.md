@@ -10,6 +10,10 @@ Welcome to the Vulnerability Reference Guide repository! This guide provides con
   - [Analysis](docs/CWE-22/dotnet/JsonConvert-Deserialisation.md)
   - DotNet
 
+- **Path Traversal**
+  - [Analysis](docs/CWE-22/java/path-traversal-metasphere.md)
+  - Java
+
 ### CWE-89
 
 - **SQL Injection Vulnerability due to Insecure Processing of Authorization Header**
