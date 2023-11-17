@@ -63,6 +63,12 @@ There is a [public POC](https://github.com/alex91ar/randomstringutils) which tak
 
 ### Patch
 
+The developers made patch to the vulnerable code by using the `java.security.SecureRandom` as the PRNG for generating the random string, here they have provided `SecureRandom` method for source of randomness. Reference for [RandomStringUtils](https://commons.apache.org/proper/commons-lang/javadocs/api-3.9/org/apache/commons/lang3/RandomStringUtils.html)
+
+```java
+		token.setContent(RandomStringUtils.random(tokenLength, 0, 0, true, true, null, new SecureRandom()));
+```
+
 ---
 
 ### How to Identify Similar vulnerabilities
