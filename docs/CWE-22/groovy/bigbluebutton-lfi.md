@@ -15,6 +15,7 @@ The problem in this was quite straightforward but to understand it, we will go o
       action = [GET: 'showTextfile']
 ```
 [UrlMappings.groovy](https://github.com/bigbluebutton/bigbluebutton/blob/adcd139ec061a718a78f02a2432fed9433e271a8/bigbluebutton-web/grails-app/controllers/org/bigbluebutton/web/UrlMappings.groovy)
+
 Now, from the above code you could make the educated guess that it takes parameters like `id`, `presentation_name` etc. and let the `"presentation"` controller's `showTextfile` function to handle processing:
 
 ```groovy
