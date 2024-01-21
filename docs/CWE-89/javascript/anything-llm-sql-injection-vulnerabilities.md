@@ -1,6 +1,3 @@
-
-
-
 # Overview
 
 This vulnerability was reported by [vxhid](https://huntr.com/users/vvxhid)

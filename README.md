@@ -6,24 +6,25 @@ Welcome to the Vulnerability Reference Guide repository! This guide provides con
 
 ### CWE-22
 
-- [**Insecure Deserialization using `JsonConvert.DeserializeObject`**](docs/CWE-22/dotnet/JsonConvert-Deserialisation.md)
-- [**Path Traversal**](docs/CWE-22/java/path-traversal-metasphere.md)
+- [**Insecure Deserialization using `JsonConvert.DeserializeObject` (.NET)**](docs/CWE-22/dotnet/JsonConvert-Deserialisation.md)
+- [**Path Traversal in Metasphere (Java)**](docs/CWE-22/java/path-traversal-metasphere.md)
+- [**Path Traversal in BigBlueButton (Groovy)**](docs/CWE-22/groovy/bigbluebutton-lfi.md)
 
 ### CWE-89
 
-- [**SQL Injection Vulnerability due to Insecure Processing of Authorization Header**](docs/CWE-89/javascript/anything-llm-sql-injection-vulnerabilities.md)
+- [**SQL Injection Vulnerability due to Insecure Processing of Authorization Header in anything-llm (JavaScript)**](docs/CWE-89/javascript/anything-llm-sql-injection-vulnerabilities.md)
 
 ### CWE-23
 
-- [**Improper Input Validation Leads to Arbitrary File Deletion**](docs/CWE-23/python/anything-llm-arbitrary-file-deletion.md)
+- [**Improper Input Validation Leads to Arbitrary File Deletion in anything-llm (Python)**](docs/CWE-23/python/anything-llm-arbitrary-file-deletion.md)
 
 ### CWE-98
 
-- [**Restricted LFI**](docs/CWE-98/php/suite-crm-unsanitized-inclusion.md)
+- [**Restricted LFI in Suite-CRM (PHP)**](docs/CWE-98/php/suite-crm-unsanitized-inclusion.md)
 
 ### CWE-338
 
-- [**Use of Weak PRNG**](docs/CWE-338/java/alovoa-insecure-random.md)
+- [**Use of Weak PRNG in Alova (Java)**](docs/CWE-338/java/alovoa-insecure-random.md)
 
 
 ## Contributing
