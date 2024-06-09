@@ -24,7 +24,7 @@ Testing for open redirect is rather straightforward as in most cases you’re lo
 
 Often times, it is important as well to look for the DOM elements within the JavaScript where your controlled input may end such as during processing of the parameters from the GET requests, the parameter is placed in the value of `window.location.href` where the location of the current window (DOM element for the current page) is being set with the controlled input.
 
-But since we now live in 2024, there are many applications which are secure of traditional open redirect vulnerabilities by making use of secure regex to match their subdomain, in case of OAuth, imagine that for the `redirect_uri` it explicitly check if the parameter contains one of their subdomains such as `<subdomain>.<domain>.tld` , here it is better to fuzz your way to see if there could be any loophole to make use of. Something that I have found useful is the following RECollapse tool which was introduced by [0xacb]
+But since we now live in 2024, there are many applications which are secure of traditional open redirect vulnerabilities by making use of secure regex to match their subdomain, in case of OAuth, imagine that for the `redirect_uri` it explicitly check if the parameter contains one of their subdomains such as `<subdomain>.<domain>.tld` , here it is better to fuzz your way to see if there could be any loophole to make use of. Something that I have found useful is the following RECollapse tool which was introduced by [0xacb](https://github.com/0xacb)
 
 https://github.com/0xacb/recollapse
 
@@ -50,20 +50,3 @@ Doing so I got successful redirect to [`google.com`](http://google.com)
 - https://www.hackerone.com/reports/101962/ - HackerOne Interstitial Redirect
 - https://www.hackerone.com/reports/103772/ - Shopify Login Open Redirect
 - https://hackerone.com/reports/119236 - Uber Open Redirect
-
-# Reporting Template
-
-With regards to the notes above, following is the generic template for the Open Redirect one may wanna use for their pentest report:
-
-**Description:** 
-
-Open redirect vulnerabilities occur when attackers manipulate certain parameters in a URL to trick a web application into redirecting users to a different, often malicious, website. This manipulation can occur through user-supplied input or by exploiting flaws in the application's logic.
-
-The impact of open redirect vulnerabilities can be significant. Attackers can exploit them to craft convincing phishing attacks, where users are directed to fake login pages or other deceptive websites designed to steal their credentials or sensitive information. Moreover, open redirects can be used as part of larger attack chains, where they serve as a stepping stone for further exploitation. For example, an attacker might use an open redirect to disguise the malicious URL of a drive-by download or to redirect users to a website hosting malware.
-
-**Solution:**
-
-To mitigate open redirect vulnerabilities, developers should implement several key strategies:
-
-1. **Input Validation:** Validate and sanitize all user-supplied input, including URL parameters, to ensure they conform to expected formats and do not contain malicious payloads. This can involve using server-side validation techniques such as input validation libraries or regular expressions.
-2. **Whitelisting:** Implement whitelisting mechanisms to restrict the destinations to which the application can redirect users. Whitelists should include only trusted URLs or URL patterns, preventing attackers from redirecting users to arbitrary or malicious websites.
