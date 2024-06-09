@@ -3,18 +3,19 @@
 **Crack the code!** Unveil vulnerabilities, exploits, and defenses with VulnInsights. Dive into secure coding practices, Active Directory security, and network penetration testing.
 
 ## Table of Contents
+
 - [Overview](#overview)
 - [WebApp Hacking](#web-application-vulnerabilities)
 - [Secure Coding](#secure-coding)
 - [Active Directory](#active-directory)
-- [Resources](#resources)
+- [Reporting Templates](#reporting-templates)
 - [Contributing](#contributing)
 - [License](#license)
 - [Questions?](#questions)
 
 ## Overview
-VulnInsights provides a comprehensive reference for understanding and addressing various vulnerabilities in secure coding practices.
 
+VulnInsights provides a comprehensive reference for understanding and addressing various vulnerabilities in secure coding practices.
 
 ## Web Application Vulnerabilities
 
@@ -68,6 +69,9 @@ Explore various vulnerabilities commonly found in web applications:
 - [Attack Vectors](active-directory/attack-vectors.md)
 - [Defense Strategies](active-directory/defense-strategies.md)
 
+## Reporting Templates
+
+- [Open Redirect Vulnerability](reporting-templates/open-redirect.md)
 
 ## Contributing
 
