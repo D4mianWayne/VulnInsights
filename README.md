@@ -20,13 +20,9 @@ VulnInsights provides a comprehensive reference for understanding and addressing
 
 Explore various vulnerabilities commonly found in web applications:
 
-- [**Open Redirect**](web-app-vulnerabilities/open-redirect.md)
-- [**API Vulnerabilities**](web-app-vulnerabilities/API.md)
-- [**Cross-Site Scripting (XSS)**](web-app-vulnerabilities/xss.md)
-- [**SQL Injection (SQLi)**](web-app-vulnerabilities/sqli.md)
-- [**Server-Side Template Injection (SSTI)**](web-app-vulnerabilities/ssti.md)
-- [**Server-Side Request Forgery (SSRF)**](web-app-vulnerabilities/ssrf.md)
-- [**Cross-Site Request Forgery (CSRF)**](web-app-vulnerabilities/csrf.md)
+- [**Open Redirect Testing**](web-app-vulnerabilities/open-redirect.md)
+- [**API Testing**](web-app-vulnerabilities/API.md)
+- [**GraphQL Testing**](web-app-vulnerabilities/GraphQL.md)
 
 ## Secure Coding
 
